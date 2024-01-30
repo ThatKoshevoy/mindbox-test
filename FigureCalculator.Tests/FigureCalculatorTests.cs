@@ -7,7 +7,7 @@ public class FigureCalculatorTests
 	[Theory]
 	[InlineData(12, 452.389)]
 	[InlineData(43, 5808.804)]
-	[InlineData(14.5, 	660.519)]
+	[InlineData(14.5, 660.519)]
 	public void GetCircleArea_True(
 		float radius,
 		float expectedResult
@@ -23,7 +23,7 @@ public class FigureCalculatorTests
 	[Theory]
 	[InlineData(12, 454.389)]
 	[InlineData(43, 589.804)]
-	[InlineData(14.5, 	620.519)]
+	[InlineData(14.5, 620.519)]
 	public void GetCircleArea_False(
 		float radius,
 		float expectedResult
