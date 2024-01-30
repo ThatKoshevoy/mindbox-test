@@ -47,9 +47,9 @@ public class FigureCalculatorTests
 		float expectedResult
 	)
 	{
-		var circle = new Triangle(a, b, c);
+		var triangle = new Triangle(a, b, c);
 		
-		var actualResult = FigureCalculator.GetArea(circle);
+		var actualResult = FigureCalculator.GetArea(triangle);
 
 		Assert.Equal(expectedResult, actualResult, 0.1);
 	}
@@ -65,9 +65,9 @@ public class FigureCalculatorTests
 		float expectedResult
 	)
 	{
-		var circle = new Triangle(a, b, c);
+		var triangle = new Triangle(a, b, c);
 		
-		var actualResult = FigureCalculator.GetArea(circle);
+		var actualResult = FigureCalculator.GetArea(triangle);
 
 		Assert.NotEqual(expectedResult, actualResult);
 	}
