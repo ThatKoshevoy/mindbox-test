@@ -14,7 +14,7 @@ public class FigureCalculatorTests
 	)
 	{
 		var circle = new Circle(radius);
-		
+
 		var actualResult = FigureCalculator.GetArea(circle);
 
 		Assert.Equal(expectedResult, actualResult, 0.1);
@@ -30,7 +30,7 @@ public class FigureCalculatorTests
 	)
 	{
 		var circle = new Circle(radius);
-		
+
 		var actualResult = FigureCalculator.GetArea(circle);
 
 		Assert.NotEqual(expectedResult, actualResult);
@@ -48,7 +48,7 @@ public class FigureCalculatorTests
 	)
 	{
 		var triangle = new Triangle(a, b, c);
-		
+
 		var actualResult = FigureCalculator.GetArea(triangle);
 
 		Assert.Equal(expectedResult, actualResult, 0.1);
@@ -66,10 +66,9 @@ public class FigureCalculatorTests
 	)
 	{
 		var triangle = new Triangle(a, b, c);
-		
+
 		var actualResult = FigureCalculator.GetArea(triangle);
 
 		Assert.NotEqual(expectedResult, actualResult);
 	}
-
 }
