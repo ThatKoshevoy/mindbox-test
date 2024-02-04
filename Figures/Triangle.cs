@@ -8,7 +8,7 @@ public class Triangle : ITriangle
 	/// <param name="a">Leg</param>
 	/// <param name="b">Leg</param>
 	/// <param name="c">Hypotenuse</param>
-	/// <exception cref="ArithmeticException">If any of arguments less or equal zero</exception>
+	/// <exception cref="ArithmeticException">Any of arguments less or equal zero</exception>
 	public Triangle(float a, float b, float c)
 	{
 		if (a <= 0 || b <= 0 || c <= 0)

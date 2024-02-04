@@ -6,7 +6,7 @@ public class Circle : ICircle
 	/// Circle
 	/// </summary>
 	/// <param name="radius">Radius of a circle</param>
-	/// <exception cref="ArithmeticException">if Radius less or equal zero</exception>
+	/// <exception cref="ArithmeticException">Radius less or equal zero</exception>
 	public Circle(float radius)
 	{
 		if (radius <= 0)
