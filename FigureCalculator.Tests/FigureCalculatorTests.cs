@@ -71,4 +71,36 @@ public class FigureCalculatorTests
 
 		Assert.NotEqual(expectedResult, actualResult);
 	}
+	
+	[Theory]
+	[InlineData(5, 24)]
+	[InlineData(4, 17)]
+	[InlineData(2, 5)]
+	public void GetSquareArea_False(
+		float side,
+		float expectedResult
+	)
+	{
+		var square = new Square(side);
+
+		var actualResult = FigureCalculator.GetArea(square);
+
+		Assert.NotEqual(expectedResult, actualResult);
+	}
+	
+	[Theory]
+	[InlineData(5, 25)]
+	[InlineData(4, 16)]
+	[InlineData(2, 4)]
+	public void GetSquareArea_True(
+		float side,
+		float expectedResult
+	)
+	{
+		var square = new Square(side);
+
+		var actualResult = FigureCalculator.GetArea(square);
+
+		Assert.Equal(expectedResult, actualResult, 0.1);
+	}
 }

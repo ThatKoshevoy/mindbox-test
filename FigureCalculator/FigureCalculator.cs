@@ -10,6 +10,7 @@ public static class FigureCalculator
 		{
 			ICircle circle => GetCircleArea(circle),
 			ITriangle triangle => GetTriangleArea(triangle),
+			ISquare square => GetSquareArea(square),
 			_ => throw new ArgumentOutOfRangeException(nameof(figure), figure, null)
 		};
 		return (float)Math.Round(area, 3);
@@ -26,4 +27,7 @@ public static class FigureCalculator
 		var p = triangle.SemiPerimeter;
 		return Math.Sqrt(p * (p - triangle.A) * (p - triangle.B) * (p - triangle.C));
 	}
+
+	private static double GetSquareArea(ISquare square)
+		=> square.SideSize * square.SideSize;
 }
